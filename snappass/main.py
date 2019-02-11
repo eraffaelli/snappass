@@ -41,7 +41,7 @@ else:
         host=redis_host, port=redis_port, db=redis_db)
 REDIS_PREFIX = os.environ.get('REDIS_PREFIX', 'snappass')
 
-TIME_CONVERSION = {'week': 604800, 'day': 86400, 'hour': 3600, 'five': 300, 'ten': 600}
+TIME_CONVERSION = {'week': 604800, 'three_day': 259200, 'day': 86400, 'six_hours': 21600, 'hour': 3600}
 
 
 def check_redis_alive(fn):
